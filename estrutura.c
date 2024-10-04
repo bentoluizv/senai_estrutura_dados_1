@@ -21,9 +21,22 @@ void inserir(Estrutura *estrutura, Requisicao *requisicao) {
         printf("Erro ao alocar memória para o nó.\n");
         exit(EXIT_FAILURE);
     }
+
     node->requisicao = requisicao;
-    node->next = estrutura->first;
-    estrutura->first = node;
+    node->next = NULL;
+
+    if (estrutura->first == NULL) {
+        estrutura->first = node;
+
+    } else {
+        Node *current = estrutura->first;
+
+        while (current->next != NULL) {
+            current = current->next;
+        }
+        current->next = node;
+    }
+
     estrutura->size++;
 }
 
