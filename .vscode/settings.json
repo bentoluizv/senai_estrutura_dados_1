@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "*.md": "markdown",
+        "strings.h": "c",
+        "estrutura.h": "c",
+        "requisicao.h": "c",
+        "stdlib.h": "c",
+        "stdio.h": "c",
+        "libc-header-start.h": "c",
+        "features.h": "c",
+        "stubs.h": "c",
+        "stubs-64.h": "c",
+        "array": "c",
+        "string_view": "c",
+        "initializer_list": "c",
+        "utility": "c",
+        "string.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "enabled"
+}
